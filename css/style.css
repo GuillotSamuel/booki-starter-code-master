@@ -53,6 +53,9 @@ body {
     color: var(--main-bg-color)
 }
 
+/****** Header ***********/
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
