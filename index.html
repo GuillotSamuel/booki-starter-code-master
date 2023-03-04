@@ -18,10 +18,10 @@
     <div class="main-container">
 
         <header>
-            <img src="./images/logo/Booki.png" alt="Logo Booki">
+            <img class="logo" src="./images/logo/Booki.png" alt="Logo Booki">
             <ul>
-                <li>Hébergements</li>
-                <li>Activités</li>
+                <li class="hebergements" type="button">Hébergements</li>
+                <li class="activites" type="button">Activités</li>
             </ul>
         </header>
         
@@ -34,18 +34,19 @@
                 </div>
 
                 <div class="search-bar">
+                    <div class="position-logo">L</div>
                     <div class="destination-search">Marseille, France</div>
                     <button>Rechercher</button>
                 </div>
 
                 <div class="filter-bar">
                     <h3>Filtres</h3>
-                    <ul>
-                        <li type="button">Économique</li>
-                        <li type="button">Familial</li>
-                        <li type="button">Romantique</li>
-                        <li type="button">Nos pépites</li>
-                    </ul>
+                    <div class="filter-bar-button-container">
+                        <div class="filter-bar-button" type="button"><h3>Économique</h3></div>
+                        <div class="filter-bar-button" type="button"><h3>Familial</h3></div>
+                        <div class="filter-bar-button" type="button"><h3>Romantique</h3></div>
+                        <div class="filter-bar-button" type="button"><h3>Nos pépites</h3></div>
+                    </div>
                 </div>
 
                 <div class="infobar">
@@ -163,6 +164,7 @@
                                 </div>
                             </div>
                         </article>
+                        <div class="afficher-plus">Afficher plus</div>
                     </div>
                 </section>
 
@@ -225,9 +227,86 @@
                         </article>
                     </div>
                 </section>
+
             </div>
+
+            <div class="activities">
+                    
+                <div class="activities-title">
+                    <h2>Activités à Marseille</h2>
+                </div>
+
+                <div class="activities-container">
+
+                    <article class="card">
+                        <img src="./images/activites/reno-laithienne.jpg" alt="Image montrant le Vieux-Port">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Vieux-Port</h3>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="card">
+                        <img src="./images/activites/paul-hermann.jpg" alt="Image montrant le Fort de Pomègues">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Fort de Pomègues</h3>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="card">
+                        <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image montrant le parc national des Calanques">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Parc national des Calanques</h3>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="card">
+                        <img src="./images/activites/florian-wehde.jpg" alt="Image montrant Notre-Dame-de-la-Garde">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                            </div>
+                        </div>
+                    </article>
+    
+                </div>
+
+            </div>
+
         </main>
-        <footer></footer>
+
+        <footer>
+            
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="footer-title">À propos</div>
+                    <p>Fonctionnement du site</p>
+                    <p>Conditions générales </p>
+                    <p>Données et confidentialité</p>
+                </div>
+
+                <div class="box">
+                    <div class="footer-title">Nos hébergements</div>
+                    <p>Charte qualité</p>
+                    <p>Proposer votre hôtel</p>
+                </div>
+
+                <div class="box">
+                    <div class="footer-title">Assistance</div>
+                    <p>Centre d’aide</p>
+                    <p>Nous contacter</p>
+                </div>
+
+            </div>
+
+        </footer>
+
     </div>
 </body>
 
