@@ -367,24 +367,24 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     margin-bottom: 30px;
 }
 
-.populaires-cards{
+.populaires-cards-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.populaires-cards .card {
+.populaires-cards {
     display: flex;
 }
 
-.populaires-cards img {
+.populaires-cards-img {
     width: 33%;
     height: 144px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
+.populaires-cards-content {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -393,17 +393,17 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populaires-cards-title {
     margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 0px;
 }
 
-.populaires-cards .card-subtitle {
+.populaires-cards-subtitle {
     margin: 0;
 }
 
-.populaires-cards .card-rating {
+.populaires-card-rating {
     margin-bottom: 5px;
 }
 
@@ -418,36 +418,41 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     width: 100%;
 }
 
-.activities-title h2 {
+.activities-title {
     font-weight: 700;
     font-size: 22px;
 }
 
-.activities-container {
+.activities-card-container {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-.activities-container .card-activities {
+.activities-card {
     width: 25%;
     background-color: var(--white);
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.activities-container .card-activities img {
+.activities-card-img {
     height: 380px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
-.card-txt-activities {
+.activities-card-content {
+    display: flex;
+    /* probleme pour alligner verticalement les textes des 4 cartes */
+}
+
+.activities-card-txt {
     display: flex;
 }
 
-.card-title-activities {
+.activities-card-title {
     margin: 20px 19px;
 }
 
@@ -459,12 +464,12 @@ footer {
     background-color: var(--main-bg-color);
 }
 
-footer .box-container {
+.footer-container {
     display: flex;
     flex-direction: row;
 }
 
-footer .box-container .box {
+.footer-box {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -476,6 +481,24 @@ footer .box-container .box {
     font-weight: 700;
     font-size: 18px;
 }
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-item {
+    list-style-type: none;
+}
+
+.footer-link {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
 
 
 /* Media queries */
@@ -503,7 +526,7 @@ footer .box-container .box {
         width: 100%;
     }
 
-    .populaires-cards{
+    .populaires-cards-container{
         flex-direction: row;
     }
 
@@ -513,11 +536,11 @@ footer .box-container .box {
         width: 100%;
     }
 
-    .activities-container .card-activities img {
+    .activities-container .activities-card img {
         height: 200px;
     }
 
-    .card-title-activities {
+    .activities-card-title {
         margin: 25.5px 19px;
     }
     
@@ -644,7 +667,7 @@ footer .box-container .box {
         order: 1;
     }
 
-    .populaires-cards{
+    .populaires-cards-container{
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -653,31 +676,31 @@ footer .box-container .box {
  
     /* Activities */
 
-    .activities-container .card-activities img {
+    .activities-card-img {
         height: 141px;
     }
 
-    .activities-container {
+    .activities-card-container {
         flex-direction: column;
     }
 
-    .activities-container .card-activities {
+    .activities-card {
         width: 100%;
     }
 
-    .card-title-activities {
+    .activities-card-title {
         margin: 20px 19px;
     }
 
 
     /* Footer */
 
-    footer .box-container {
+    .footer-container {
         flex-direction: column;
         gap: 30px;
     }
 
-    footer .box-container .box {
+    .footer-box {
         width: 100%;
     }
 
