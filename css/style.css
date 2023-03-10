@@ -27,6 +27,7 @@ body {
 .fa-solid {
     color: var(--main-color);
 }
+
 .card {
     background-color: white;
     border-radius: 20px;
@@ -48,10 +49,6 @@ body {
 
 .neutralStar {
     color: var(--main-bg-color)
-}
-
-h2:hover {
-    cursor: default;
 }
 
 button:hover {
@@ -81,9 +78,9 @@ main {
 }
 
 
-/* Header */
+/* Header Nav Container */
 
-header {
+.header-nav-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -91,12 +88,18 @@ header {
     margin-bottom: 30px;
 }
 
+
+/* Header */
+
 header .logo-box .logo {
     height: 19px;
     margin: 30px;
 }
 
-header .header-button-list ul {
+
+/* Nav */
+
+nav .header-button-list ul {
     display: flex;
     flex-direction: row;
     gap: 69px;
@@ -104,13 +107,13 @@ header .header-button-list ul {
     margin-right: 42.3px;
 }
 
-header .header-button-list ul .header-button-container {
+nav .header-button-list ul .header-button-container {
     list-style-type: none;
     padding-top: 16px;
     font-size: 16px;
 }
 
-header .header-button-list ul .header-button-container .header-button a {
+nav .header-button-list ul .header-button-container .header-button a {
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 16px;
@@ -118,7 +121,7 @@ header .header-button-list ul .header-button-container .header-button a {
     text-decoration: none;
 }
 
-header .header-button-list ul .header-button-container .header-button a:hover {
+nav .header-button-list ul .header-button-container .header-button a:hover {
     color: var(--main-color);
     padding-top: 14px;
     border-top: 2px solid var(--main-color);
@@ -530,23 +533,27 @@ footer .box-container .box {
         margin: 0px;
     }
 
-    /* Header */
+    /* Header Nav Container */
 
-    header {
+    .header-nav-container {
         display: block;
     }
+
+    /* Header */
 
     header .logo-box {
         display: flex;
         justify-content: center;
     }
 
-    header .header-button-list ul {
+    /* Nav */
+
+    nav .header-button-list ul {
         margin: 0px;
         gap: 0px;
     }
 
-    header .header-button-list ul .header-button-container {
+    nav .header-button-list ul .header-button-container {
         width:50%;
         display: flex;
         justify-content: center;
@@ -555,11 +562,11 @@ footer .box-container .box {
         border-bottom: 2px solid var(--main-bg-color);
     }
 
-    header .header-button-list ul .header-button-container:hover {
+    nav .header-button-list ul .header-button-container:hover {
         border-bottom: 2px solid var(--main-color);
     }
 
-    header .header-button-list ul .header-button-container .header-button a:hover {
+    nav .header-button-list ul .header-button-container .header-button a:hover {
         border-top: none;
     }
 
@@ -593,15 +600,17 @@ footer .box-container .box {
 
     .filter-bar {
         flex-direction: column;
+        width: 100%;
     }
     
     .filter-bar .filter-bar-button-container {
         flex-direction: column;
         gap: 10px;
+        width: 100%;
     }
 
     .filter-bar .filter-bar-button-container .filter-bar-button-container-g {
-        width: 100%;
+        
     }
 
     .filter-bar .filter-bar-button-container .filter-bar-button-container-g .filter-bar-button {
