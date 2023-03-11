@@ -91,7 +91,7 @@ main {
 
 /* Header */
 
-header .logo-box .logo {
+.header-logo {
     height: 19px;
     margin: 30px;
 }
@@ -99,7 +99,7 @@ header .logo-box .logo {
 
 /* Nav */
 
-nav .header-button-list ul {
+.header-button-list {
     display: flex;
     flex-direction: row;
     gap: 69px;
@@ -107,13 +107,13 @@ nav .header-button-list ul {
     margin-right: 42.3px;
 }
 
-nav .header-button-list ul .header-button-container {
+.header-button-container {
     list-style-type: none;
     padding-top: 16px;
     font-size: 16px;
 }
 
-nav .header-button-list ul .header-button-container .header-button a {
+.header-link {
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 16px;
@@ -121,7 +121,7 @@ nav .header-button-list ul .header-button-container .header-button a {
     text-decoration: none;
 }
 
-nav .header-button-list ul .header-button-container .header-button a:hover {
+.header-link:hover {
     color: var(--main-color);
     padding-top: 14px;
     border-top: 2px solid var(--main-color);
@@ -137,7 +137,7 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     gap: 35px;
 }
 
-.info-group .headline {
+.headline {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -153,7 +153,7 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     border-radius: 15px;
 }
 
-.search-bar .position-logo {
+.search-bar-logo {
     background-color: var(--main-bg-color);
     display: flex;
     align-items: center;    
@@ -161,32 +161,32 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     border-bottom-left-radius: 15px;
 }
 
-.search-bar .position-logo i {
+.search-bar-logo i {
     color: var(--black);
     padding-left: 18px;
     padding-right: 18px;
 }
 
-.search-bar .destination-search {
+.search-bar-destination {
     display: flex;
     align-items: center;    
 }
 
-.search-bar .destination-search form input {
+.search-bar-input {
     border: none;
     font-weight: 700;
     font-size: 18px;
     text-align: center;
 }
 
-.search-bar .destination-search form input::placeholder {
+.search-bar-input::placeholder {
     font-weight: 700;
     font-size: 18px;
     text-align: center;
     color: var(--black);
 }
 
-.search-bar .destination-search form input:focus {
+.search-bar-input:focus {
     outline: none;
     border: none;
     font-weight: 700;
@@ -194,7 +194,7 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     text-align: center;
 }
 
-.search-bar .search-button-text {
+.search-button-text {
     background-color: var(--main-color);
     border: none;
     color: var(--main-bg-color);
@@ -207,7 +207,7 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     padding: 14px 16px 14px 16px;
 }
 
-.search-bar .search-button-logo {
+.search-button-logo {
     display: none;
 }
 
@@ -219,19 +219,19 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     gap: 15px;
 }
 
-.filter-bar .filter-bar-button-container {
+.filter-bar-button-container {
     display: flex;
     flex-direction: row;
     gap: 15px;    
 }
 
-.filter-bar .filter-bar-button-container .filter-bar-button-container-g {
+.filter-bar-button-row-container {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-.filter-bar .filter-bar-button-container .filter-bar-button-container-g .filter-bar-button {
+.filter-bar-button {
     border: 2px solid #D9D9D9;
     display: flex;
     flex-direction: row;
@@ -245,11 +245,11 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     background-color: var(--white);
 }
 
-.filter-bar .filter-bar-button-container .filter-bar-button-container-g .filter-bar-button:hover {
+.filter-bar-button:hover {
     background-color: var(--filter-bg-color);
 }
 
-.filter-bar .filter-bar-button-container .filter-bar-button i {
+.filter-bar-button-logo {
     color: var(--main-color);
 }
 
@@ -260,7 +260,7 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     gap: 10px;
 }
 
-.infobar .i-logo {
+.infobar-logo-container {
     border: 1px solid #D9D9D9;
     width: 24px;
     height: 24px;
@@ -271,14 +271,14 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     align-items: center;
 }
 
-.infobar .i-logo i {
+.infobar-logo {
     color: var(--black);
 }
 
 
 /* Hebergements et populaires */
 
-.hebergements-and-populaires {
+.hebergements-and-populaires-container {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -303,25 +303,25 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     gap: 30px;
 }
 
-.hebergements-cards-g {
+.hebergements-cards-row {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-.hebergements-cards-g .card {
+.hebergements-cards {
     flex-basis: 0;
     flex-grow: 1;
     width: 100%;
 }
 
-.hebergements-cards-g .card img {
+.hebergements-cards-img {
     height: 124px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
 }
 
-.hebergements-cards-g .card .card-content {
+.hebergements-cards-content {
     padding: 0px 15px;
     margin-top: 4px;
     display: flex;
@@ -330,17 +330,15 @@ nav .header-button-list ul .header-button-container .header-button a:hover {
     margin-bottom: 10px;
 }
 
-.hebergements-cards-g .card .card-content .card-txt {
+.hebergements-cards-txt  {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.hebergements-cards-g .card .card-content .card-txt .card-title{
+.hebergements-cards-title{
     margin: 0px;
 }
-
-
 
 .afficher-plus {
     text-align: start;
@@ -509,11 +507,11 @@ footer {
 
     /* Info Group */
 
-    .infobar .i-logo i {
+    .infobar-logo {
         color: var(--main-color);
     }
 
-    .hebergements-and-populaires {
+    .hebergements-and-populaires-container {
         flex-direction: column;
         gap: 50px;
     }
@@ -530,13 +528,13 @@ footer {
         flex-direction: row;
     }
 
-    .populaires-cards .card {
+    .populaires-cards {
         flex-basis: 0;
         flex-grow: 1;
         width: 100%;
     }
 
-    .activities-container .activities-card img {
+    .activities-card-img {
         height: 200px;
     }
 
@@ -556,27 +554,30 @@ footer {
         margin: 0px;
     }
 
+    
     /* Header Nav Container */
 
     .header-nav-container {
         display: block;
     }
 
+
     /* Header */
 
-    header .logo-box {
+    .header-logo-box {
         display: flex;
         justify-content: center;
     }
 
+
     /* Nav */
 
-    nav .header-button-list ul {
+    .header-button-list {
         margin: 0px;
         gap: 0px;
     }
 
-    nav .header-button-list ul .header-button-container {
+    .header-button-container {
         width:50%;
         display: flex;
         justify-content: center;
@@ -585,11 +586,11 @@ footer {
         border-bottom: 2px solid var(--main-bg-color);
     }
 
-    nav .header-button-list ul .header-button-container:hover {
+    .header-button-container:hover {
         border-bottom: 2px solid var(--main-color);
     }
 
-    nav .header-button-list ul .header-button-container .header-button a:hover {
+    .header-button a:hover {
         border-top: none;
     }
 
@@ -601,14 +602,11 @@ footer {
         align-items: center;
     }
 
-    .search-bar-container {
-    }
-
-    .search-bar .search-button-text {
+    .search-button-text {
         display: none;
     }
     
-    .search-bar .search-button-logo {
+    .search-button-logo {
         background-color: var(--main-color);
         border: none;
         display: flex;
@@ -617,7 +615,7 @@ footer {
         padding: 16px;
     }
 
-    .search-bar .search-button-logo i {
+    .search-button-logo i {
         color: var(--white);
     }
 
@@ -626,23 +624,20 @@ footer {
         width: 100%;
     }
     
-    .filter-bar .filter-bar-button-container {
+    .filter-bar-button-container {
         flex-direction: column;
         gap: 10px;
         width: 100%;
     }
 
-    .filter-bar .filter-bar-button-container .filter-bar-button-container-g {
-        
-    }
-
-    .filter-bar .filter-bar-button-container .filter-bar-button-container-g .filter-bar-button {
+    .filter-bar-button {
         width: 50%;
     }
 
+
     /* Hebergements et populaires */
 
-    .hebergements-and-populaires {
+    .hebergements-and-populaires-container {
         gap: 35px;
     }
 
@@ -655,10 +650,15 @@ footer {
         border-radius: 0px;
     }
 
-    .hebergements-cards-g {
+    .hebergements-cards-row {
         flex-direction: column;
         gap: 15px;
     }
+
+    .afficher-plus {
+        background-color: var(--white);
+    }
+
 
     /* Populaires */
  
