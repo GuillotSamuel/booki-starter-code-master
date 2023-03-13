@@ -272,6 +272,11 @@ main {
     color: var(--main-color);
 }
 
+.filter-bar-button-text {
+    font-size: 17px;
+    font-weight: 700;
+}
+
 .infobar {
     display: flex;
     flex-direction: row;
@@ -370,13 +375,10 @@ main {
     margin: 0px;
 }
 
-.afficher-plus {
+.afficher-plus-link {
     text-align: start;
     border: none;
     background-color: var(--main-bg-color);
-}
-
-.afficher-plus-link {
     font-weight: 700;
     font-size: 18px;
     text-decoration: none;
@@ -746,7 +748,7 @@ footer {
         width: 100%;
     }
 
-    .afficher-plus {
+    .afficher-plus-link {
         background-color: var(--white);
     }
 
