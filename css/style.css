@@ -113,13 +113,13 @@ main {
     margin-right: 42.3px;
 }
 
-.header-button-container {
+.header-button {
     list-style-type: none;
     padding-top: 16px;
-    font-size: 16px;
 }
 
 .header-link {
+
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 16px;
@@ -147,6 +147,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
 }
 
 .headline-1 {
@@ -635,7 +636,7 @@ footer {
         gap: 0px;
     }
 
-    .header-button-container {
+    .header-button {
         width:50%;
         display: flex;
         justify-content: center;
@@ -644,11 +645,11 @@ footer {
         border-bottom: 2px solid var(--main-bg-color);
     }
 
-    .header-button-container:hover {
+    .header-button:hover {
         border-bottom: 2px solid var(--main-color);
     }
 
-    .header-button a:hover {
+    .header-link:hover {
         border-top: none;
     }
 
