@@ -61,6 +61,7 @@ button:hover {
 }
 
 
+
 /* Main */
 
 .main-container {
@@ -287,6 +288,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .infobar-logo {
@@ -328,6 +330,15 @@ main {
     gap: 30px;
 }
 
+.hebergements-link {
+    width: calc(100%/3);
+}
+
+.hebergements-link, .hebergements-link:link, .hebergements-link:visited {
+    text-decoration: none!important;
+    color: var(--black);
+}
+
 .hebergements-cards {
     flex-basis: 0;
     flex-grow: 1;
@@ -349,22 +360,27 @@ main {
     margin-bottom: 10px;
 }
 
-.hebergements-cards-txt  {
+.hebergements-cards-txt {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.hebergements-cards-title{
+.hebergements-cards-title {
     margin: 0px;
 }
 
 .afficher-plus {
     text-align: start;
     border: none;
+    background-color: var(--main-bg-color);
+}
+
+.afficher-plus-link {
     font-weight: 700;
     font-size: 18px;
-    background-color: var(--main-bg-color);
+    text-decoration: none;
+    color: var(--black);
 }
 
 
@@ -392,6 +408,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.populaires-link, .populaires-link:link, .populaires-link:visited {
+    text-decoration: none!important;
+    color: var(--black);
 }
 
 .populaires-cards {
@@ -480,6 +501,11 @@ main {
     margin: 20px 19px;
     font-size: 16px;
     font-weight: 700px;
+    color: var(--black);
+}
+
+.activities-link, .activities-link:link, .activities-link:visited {
+    text-decoration: none!important;
 }
 
 
@@ -552,7 +578,11 @@ footer {
         width: 100%;
     }
 
-    .populaires-cards-container{
+    .populaires-link {
+        width: calc(100%/3);
+    }
+
+    .populaires-cards-container {
         flex-direction: row;
     }
 
@@ -569,7 +599,6 @@ footer {
     .activities-card-title {
         margin: 25.5px 19px;
     }
-    
 
 }
 
@@ -725,6 +754,10 @@ footer {
         border-radius: 0px;
         order: 1;
         padding: 30px 20px;
+    }
+
+    .populaires-link {
+        width: 100%;
     }
 
     .populaires-title {
