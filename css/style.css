@@ -142,6 +142,8 @@ main {
     gap: 35px;
 }
 
+/* Headline - Info Group */
+
 .headline {
     display: flex;
     flex-direction: column;
@@ -152,6 +154,8 @@ main {
 .headline-1 {
     font-size: 22px;
 }
+
+/* Search bar -Info Group */
 
 .search-bar {
     max-width: 377px;
@@ -222,6 +226,8 @@ main {
     display: none;
 }
 
+/* Filter bar - Info group */
+
 .filter-bar {
     display: flex;
     flex-direction: row;
@@ -267,6 +273,8 @@ main {
     font-size: 17px;
     font-weight: 700;
 }
+
+/* Info bar - Info Group */
 
 .infobar {
     display: flex;
@@ -657,6 +665,8 @@ footer {
         align-items: center;
     }
 
+    /* Search bar -Info Group */
+
     .search-button-text {
         display: none;
     }
@@ -682,15 +692,20 @@ footer {
     .search-bar-input {
         text-align: left;
         padding-left: 24px;
+        max-width: 100%;
     }
 
     .search-bar-input::placeholder {
         text-align: left;
+        max-width: 100%;
     }
 
     .search-bar-input:focus {
         text-align: left;
+        max-width: 100%;
     }
+
+    /* Filter bar - Info group */
 
     .filter-bar {
         flex-direction: column;
