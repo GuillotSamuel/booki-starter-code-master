@@ -552,6 +552,16 @@ footer {
 
 /* Media queries */
 
+/* Intermediate large devices (desktops, less/equal than 1300px) */
+
+@media (max-width: 1300px) {
+
+    .hebergements-cards-title {
+        height: 40px;
+    }
+
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
@@ -565,6 +575,10 @@ footer {
     .hebergements-and-populaires-container {
         flex-direction: column;
         gap: 50px;
+    }
+
+    .hebergements-cards-title {
+        height: auto;
     }
 
     .hebergements {
