@@ -480,6 +480,12 @@ main {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.activities-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .activities-card-img {
     height: 380px;
     width: 100%;
@@ -488,13 +494,16 @@ main {
 }
 
 .activities-card-content {
-    flex-grow: 1;
     display: flex;
-    align-items: center;
+    flex-grow: 1;
 }
 
 .activities-card-txt {
     display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+
 }
 
 .activities-card-title {
@@ -672,6 +681,7 @@ footer {
 
     .header-link:hover {
         border-top: none;
+        padding-top: 0px;
     }
 
 
