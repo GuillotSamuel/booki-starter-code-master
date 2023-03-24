@@ -236,6 +236,10 @@ main {
     gap: 15px;
 }
 
+.filter-bar-title {
+    font-size: 18px;
+}
+
 .filter-bar-button-container {
     display: flex;
     flex-direction: row;
@@ -325,6 +329,10 @@ main {
     gap: 30px;
 }
 
+.hebergements-section-title {
+    font-size: 22px;
+}
+
 .hebergements-cards-container {
     display: flex;
     flex-direction: column;
@@ -402,6 +410,10 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+}
+
+.populaires-section-title {
+    font-size: 22px;
 }
 
 .populaires-cards-container {
