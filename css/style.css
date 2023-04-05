@@ -773,10 +773,11 @@ footer {
         flex-wrap: wrap;
         gap: 20px 10px;
         width: 100%;
+        justify-content: space-between;
     }
 
     .filter-bar-button {
-        width: 48.3%;
+        width: 48%;
     }
 
 
